@@ -3,7 +3,7 @@
 
 > 🌐 **Live Preview:** [wd-222-hotbox-beatbox-malaysia.vercel.app](https://wd-222-hotbox-beatbox-malaysia.vercel.app/)
 
-> 📁 **Repository:** [NeKoMaRu2607/WD222---Multimedia-Website](https://github.com/NeKoMaRu2607/WD222---Multimedia-Website)
+> 📁 **Repository:** [NeKoMaRu2607/WD222---HOTBOX-BEATBOX-MALAYSIA](https://github.com/NeKoMaRu2607/WD222---HOTBOX-BEATBOX-MALAYSIA)
 
 A multi-page website for **HOTBOXMALAYSIA™**, Malaysia's premier beatbox community organisation. Built as a final project for the WD222 Web Design module.
 
