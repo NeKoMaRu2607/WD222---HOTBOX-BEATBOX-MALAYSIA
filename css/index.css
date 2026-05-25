@@ -1,0 +1,174 @@
+/* Adjusting dropdown visibility and transition */
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 15rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 15px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.dropdown-menu a {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 15px;
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Submenu positioning */
+#submenu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 15rem;
+    transition: opacity 0.5s ease, visibility 0.5s ease, top 0.5s ease;
+}
+
+.dropdown:hover #submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+#submenu li {
+    width: 100%;
+}
+
+#submenu a {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 15px; /* Larger text for submenu */
+    background-color: #34495e;
+    color: white;
+    padding: 12px 20px; /* Increased padding for better spacing */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#submenu a:hover {
+    background: #df4b05;
+}
+
+#submenu a {
+    background-color: #34495e;
+    color: white;
+}
+
+p.bsmall {
+    line-height: 1.8;
+}
+
+p.big {
+    line-height: 2.5;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.grey_color {
+    background-color: rgb(213, 219, 219) !important;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.social-button {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    z-index: 9999;
+}
+
+.dropdown-menu {
+    z-index: 1050;
+    /* Default z-index for Bootstrap dropdown */
+}
+
+.menu {
+    background-color: white;
+    border-color: red;
+}
+
+.menu-border {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.navbar-nav .dropdown .nav-link {
+    cursor: pointer;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 9999
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader img {
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0turn); }
+    100% { transform: rotate(1turn); }
+}

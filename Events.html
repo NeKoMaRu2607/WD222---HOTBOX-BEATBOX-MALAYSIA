@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/EVENTS styles.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <style>
+        p.bsmall {
+            line-height: 1.8;
+        }
+
+        p.big {
+            line-height: 2.5;
+        }
+
+        .grey_color {
+            background-color: rgb(213, 219, 219) !important;
+        }
+
+        .social-button {
+            position: fixed;
+            right: 10px;
+            bottom: 30px;
+            z-index: 9999;
+        }
+
+        .menu {
+            background-color: white;
+            border-color: red;
+        }
+
+        .hr {
+            position: relative;
+            top: 20px;
+            border: none;
+            height: 12px;
+            background: white;
+            margin-bottom: 50px;
+        }
+    </style>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <title>HOTBOXMALAYSIA™ Event Page</title>
+</head>
+
+<body style="background-color: black;" data-spy="scroll" data-target="#navComp" data-offset="52">
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navComp" data-spy="affix" data-offset-top="26">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand fs-4" href="#"></a><img src="media/Hotbox Logo.jpg" alt="Hotbox Malaysia Logo"
+                height="50px" width="50px">
+            <!-- Title -->
+            <h1 class="text-white p-3" style="text-align: center;">
+                <strong>Hotbox Malaysia</strong>
+            </h1>
+            <!-- Toggle Btn -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Side Bar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- Sidebar Body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-8 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3 text-white">
+                        <li class="nav-item">
+                            <a class="nav-link link-116 active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link link-116 text-white dropdown-toggle" id="services"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="Artists.html">ARTISTS</a>
+                            <ul class="dropdown-menu menu" aria-labelledby="services">
+                                <li><a class="dropdown-item" href="Artists.html">Solo Artists</a></li>
+                                <li><a class="dropdown-item" href="Artists.html">Crew</a></li>
+                                <li><a class="dropdown-item" href="Artists.html">Loopstation</a></li>
+                                <li><a class="dropdown-item" href="Artists.html">Tag Teams</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link link-116 text-white dropdown-toggle" id="services"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="Events.html">EVENTS</a>
+                            <ul class="dropdown-menu menu" aria-labelledby="services">
+                                <li><a class="dropdown-item" href="Events.html">Upcoming</a></li>
+                                <li><a class="dropdown-item" href="Events.html">Past</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link link-116 text-white dropdown-toggle" id="services"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="Contents.html">CONTENTS</a>
+                            <ul class="dropdown-menu menu" aria-labelledby="services">
+                                <li><a class="dropdown-item" href="Contents.html">Performances</a></li>
+                                <li><a class="dropdown-item" href="Contents.html">Features</a></li>
+                                <li><a class="dropdown-item" href="Contents.html">Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link link-116 text-white" href="Contact Us.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex justify-content-center align-items-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-white text-white" type="submit">Search</button>
+                    </form>
+                    <!-- Login -->
+                    <div class="d-flex justify-content-center align-items-center gap-3 p-4">
+                        <div class="glyphicons"><span class="glyphicon glyphicon-user" style="color:#fff;"></span></div>
+                        <a href="LoginForm.html" class="text-white">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <center>
+            <h1 class="text-white">Events</h1>
+        </center>
+        <h3 class="text-white"><b><u>BEATBOX BATTLES</u></b></h3>
+        <p class="text-white p-2 text-justify big">Dive into the thrilling world of us beatbox battle events, where
+            Malaysia's finest competitive beatboxers clash
+            to elevate their skills and the local scene. These high-octane battles are open to all, offering every
+            participant a chance to claim victory through live eliminations or wildcard submissions. Keep an eye out for
+            our
+            upcoming tournaments and join us to witness the fierce competition and sheer talent that define our events.
+            Stay
+            tuned for announcements on when the next battle will take place and who will be crowned the next top
+            beatboxer!
+        </p>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h3 class="text-white"><b><u>UPCOMING EVENTS</u></b></h3>
+    </div>
+    <hr>
+    <div class="text-white d-flex justify-content-center">
+        <h1><b>Stay tuned, there's something HOT for you guys!</b></h1>
+    </div>
+    <br>
+    <hr>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h3 class="text-white"><b><u>PAST EVENTS</u></b></h3>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h3 class="text-white"><b>The Year of 2022</b></h3>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Sport.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Sport Street Culture</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/HOTBOX Beatbox Battle Poster.png"
+                            style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">HOTBOX Beatbox Battle Poster</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h3 class="text-white"><b>The Year of 2023</b></h3>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/BoB.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Battle or Balik "BoB"</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Icebox Poster.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Icebox Beatbox Battle</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container mt-5 d-flex justify-content-center">
+        <h3 class="text-white"><b>The Year of 2024</b></h3>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/KawKaw Beatbox Battle Poster.jpg"
+                            style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">KAWKAW Beatbox Battle</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/GerakLuu Poster.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">GerakLuu Beatbox Battle</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container mt-5">
+        <h3 class="text-white"><b><u>PERFORMANCE</u></b></h3>
+        <p class="text-white p-2 text-justify big">HOTBOXMALAYSIA has been on various stages over the years, featuring
+            our talented artists from the Artist Hub and skilled
+            students from the HOTBOX Community. From epic public showcases to intimate private events, our performers
+            have consistently delivered awe-inspiring experiences
+            in Malaysia.
+        </p>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Sunway University Performance.jpg"
+                            style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Invitation Performance By Sunway University</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Songkran.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Songkran MY Festival 2023</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Elixir.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">The Battlefield Grand Final By ELIXIR Kuala Lumpur</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card__front"><img src="media/Face3.jpg" style="width: 300px; height: 350px;">
+                    </div>
+                    <div class="card__back">
+                        <div class="card__back--container">
+                            <div class="card__text">Super HipHop Festival By FACE3 Kuala Lumpur</div>
+                            <div class="card__social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="social-button">
+        <a class="toggle" data action="open" data-phone="+601-6491 5771"
+            data-message="Hi Hotsy, Can I sign up a trail for my child?" role="button" tabindex="0"
+            data-message="Hi Hotsy, Can I sign up a trail?" role="button" tabindex="1" aria-label="Chat on WhatsApp"
+            href="https://wa.me/+60164915771"><img alt="Chat on WhatsApp" src="media/WhatsAppButtonGreenSmall.png"
+                style="width: 150px;" /></a>
+    </div>
+    <br><br><br><br>
+    <!-- Footer -->
+    <div class="footer" class="text-center text-lg-start bg-body-tertiary" style="background-color: white;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- TikTok -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-tiktok"></i></a>
+
+                <!-- Youtube -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-cube me-3"></i>HOTBOX MALAYSIA™
+                        </h6>
+                        <p class="text-justify small">
+                            HOTBOXMALAYSIA™ is an organization that focuses on providing a stable and wholesome
+                            environment for all
+                            beatbox artists throughout Malaysia.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links to
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Artists</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Live Contents</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Events</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Community</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links to
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tiktok</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Enquiries / Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i>Petaling Jaya, Selangor, 47301,Malaysia</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            hbxmalaysia@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +601-6491 5771</p>
+                        <p><i class="fas fa-fire me-3"></i> THERE'S SOMETHING HOT YOU GUYS!</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="#">HOTBOXMALAYSIA™</a>
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- Footer -->
+</body>
+
+</html>

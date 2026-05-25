@@ -1,0 +1,101 @@
+:root {
+    --color-primary: #813b8d;
+    --color-primary-dark: #681519;
+    --color-secondary: green;
+  
+    --color-white: rgba(255, 255, 255, 0.8)
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    align-items: center !important; 
+    justify-content: center !important; 
+  }
+  
+  .card {
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+
+    position:relative;
+    perspective: 900px;
+  }
+  
+  .card>* {
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transition: all 0.8s ease;
+
+    backface-visibility: hidden;
+  }
+  
+  .card__front {
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card:hover .card__front {
+    transform: rotateY(-180deg)
+  }
+
+  .card__back {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+    transform: rotateY(180deg);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .card:hover .card__back {
+    transform: rotateY(0)
+  }
+
+  .card__back--container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .card__text {
+    font-size: 30px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .card__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__social .fa-brands {
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--color-white);
+    transition: all 0.2s ease;
+  }
+  
+  .card__social .fa-brands:hover {
+    color: var(--color-secondary) !important;
+    transform: translateY(-2px) !important;
+  }
